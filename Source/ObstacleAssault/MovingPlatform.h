@@ -23,4 +23,14 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, Category="Moving Platform")
+	FVector PlatforVelocity = FVector(100, 0, 0);
+
+	UPROPERTY(EditAnywhere)
+	float MoveDistance = 100;
+
+	FVector StartLocation;
+
+
+
 };
